@@ -56,6 +56,7 @@ for i in range(0, 5000, 5000):
 
     '''convert sequence into long string'''
     sequence = numpy.array(listtostring(numpy.array(sequence)))
+    testOutcome=numpy.array(testOutcome)
 
     '''divide date'''
     print 'No. of sequences: ' + str(len(testOutcome))
@@ -226,6 +227,7 @@ for i in range(0, 5000, 5000):
     train_sequence, train_labels = sequence[train_ids], testOutcome[train_ids]
     valid_sequence, valid_labels = sequence[valid_ids], testOutcome[valid_ids]
     test_sequence, test_labels = sequence[test_ids], testOutcome[test_ids]
+
 
     print str(len(train_sequence)) + ' ' + str(len(train_labels))
     print str(len(valid_sequence)) + ' ' + str(len(valid_labels))
